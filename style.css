@@ -3,7 +3,7 @@
 }
 
 .custom-color-green {
-  color: #1F4F52;
+  color: #2e6569;
 }
 
 .custom-color-black {
@@ -12,5 +12,9 @@
 
 .custom-outline:hover {
   color: #ffffff;
+  background-color: #2e6569;
+}
+
+.custom-hamburger-menu {
   background-color: #2e6569;
 }
