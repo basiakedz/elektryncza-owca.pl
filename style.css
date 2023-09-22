@@ -16,5 +16,29 @@
 }
 
 .custom-hamburger-menu {
+  border: 0;
+}
+
+.custom-btn {
+  background-color: #2e6569;
+  color: #ffffff;
+}
+
+.custom-btn:hover {
+  background-color: #1c3d3f;
+  color: #ffffff;
+}
+
+.custom-btn-nav {
+  color: #111827;
+}
+
+.custom-btn-nav--active {
+  color: #ffffff;
+  background-color: #2e6569;
+}
+
+.custom-btn-nav:hover {
+  color: #ffffff;
   background-color: #2e6569;
 }
