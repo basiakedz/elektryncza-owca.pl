@@ -43,12 +43,12 @@
   background-color: #2e6569;
 }
 
-.article-cover-container {
+.custom-article-cover-container {
   position: relative;
   padding-top: 70%;
 }
 
-.article-cover {
+.custom-article-cover {
   position: absolute;
   top: 0;
   right: 0;
@@ -57,4 +57,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.custom-underline:hover {
+  text-decoration-color: #2e6569 !important;
+  cursor: pointer;
 }
