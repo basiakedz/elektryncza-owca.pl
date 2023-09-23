@@ -63,3 +63,8 @@
   text-decoration-color: #2e6569 !important;
   cursor: pointer;
 }
+
+.custom-subpage-cover {
+  width: 100%;
+  max-width: 50rem;
+}
