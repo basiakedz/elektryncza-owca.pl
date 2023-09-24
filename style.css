@@ -5,6 +5,9 @@
 .custom-color-green {
   color: #2e6569;
 }
+a .custom-color-green:hover {
+  color:#1c3d3f;
+}
 
 .custom-color-black {
   color: #111827;
@@ -60,11 +63,16 @@
 }
 
 .custom-underline:hover {
-  text-decoration-color: #2e6569 !important;
+  text-decoration-color:#1c3d3f !important;
   cursor: pointer;
 }
 
 .custom-subpage-cover {
   width: 100%;
   max-width: 50rem;
+}
+
+.custom-list {
+  list-style-type: circle;
+  color: #2e6569;
 }
