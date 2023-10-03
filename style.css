@@ -80,7 +80,6 @@ a .custom-color-green:hover {
 .custom-radio-icon-input__icon {
   width: 100px;
   height: 100px;
-  color: blue;
   opacity: 0.5;
   display: block;
   margin: 1rem auto 1.5rem;
@@ -93,10 +92,6 @@ a .custom-color-green:hover {
 .custom-radio-icon-input {
   display: none;
 }
-
-/* .custom-radio-icon-form-check {
-  padding-left: 0;
-} */
 
 .form-check-label,
 .form-check-input {
@@ -115,5 +110,9 @@ a .custom-color-green:hover {
 
 .custom-flex-space-around {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+}
+
+.form-check {
+  padding-left: 0;
 }
