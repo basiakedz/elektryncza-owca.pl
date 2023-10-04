@@ -157,57 +157,7 @@
                   <legend class="custom-color-green fw-semibold fs-5 pb-2">
                     Czas rozpoczęcia
                   </legend>
-
-                  <div class="row">
-                    <div
-                      class="col-12 col-md-4 d-flex justify-content-md-center"
-                    >
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="datetime"
-                          id="datetimeOne"
-                        />
-                        <label class="form-check-label" for="datetimeOne">
-                          04.10.2023 19:30
-                        </label>
-                      </div>
-                    </div>
-
-                    <div
-                      class="col-12 col-md-4 d-flex justify-content-md-center"
-                    >
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="datetime"
-                          id="datetimeTwo"
-                        />
-                        <label class="form-check-label" for="datetimeTwo">
-                          11.10.2023 18:00
-                        </label>
-                      </div>
-                    </div>
-
-                    <div
-                      class="col-12 col-md-4 d-flex justify-content-md-center"
-                    >
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="datetime"
-                          id="datetimeThree"
-                        />
-                        <label class="form-check-label" for="datetimeThree">
-                          24.10.2023 19:30
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
+                  <div class="row" id="dates-radio-list"></div>
                   <div class="invalid-feedback">Proszę wybrać termin</div>
                 </fieldset>
 
@@ -251,7 +201,7 @@
 
                   <div class="row">
                     <div class="col-6">
-                      <div class="form-check custom-radio-icon-form-check pb-2">
+                      <div class="form-check custom-form-check-padding pb-2">
                         <input
                           class="form-check-input custom-radio-icon-input"
                           type="radio"
@@ -262,14 +212,18 @@
                           class="form-check-label custom-radio-icon-label text-center"
                           for="polish"
                         >
-                        <img class="custom-radio-icon-input__icon" src="./img/polish_flag.png" alt="polish flag"/>
+                          <img
+                            class="custom-radio-icon-input__icon"
+                            src="./img/polish_flag.png"
+                            alt="polish flag"
+                          />
                           Polskim
                         </label>
                       </div>
                     </div>
 
                     <div class="col-6">
-                      <div class="form-check custom-radio-icon-form-check pb-2">
+                      <div class="form-check custom-form-check-padding pb-2">
                         <input
                           class="form-check-input custom-radio-icon-input"
                           type="radio"
@@ -280,7 +234,11 @@
                           class="form-check-label custom-radio-icon-label text-center"
                           for="english"
                         >
-                        <img class="custom-radio-icon-input__icon" src="./img/english_flag.png" alt="english flag"/>
+                          <img
+                            class="custom-radio-icon-input__icon"
+                            src="./img/english_flag.png"
+                            alt="english flag"
+                          />
                           Angielskim
                         </label>
                       </div>
@@ -290,16 +248,14 @@
                   <div class="invalid-feedback">Proszę wybrać język</div>
                 </fieldset>
 
-                <fieldset
-                  class="pb-4 is-invalid has-validation custom-form-list"
-                >
+                <fieldset class="pb-4 is-invalid has-validation">
                   <legend class="custom-color-green fw-semibold fs-5 pb-2">
                     Na jaką pozycję aplikujesz
                   </legend>
 
                   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                     <div class="col">
-                      <div class="form-check custom-radio-icon-form-check pb-2">
+                      <div class="form-check custom-form-check-padding pb-3">
                         <input
                           class="form-check-input custom-radio-icon-input"
                           type="radio"
@@ -326,7 +282,7 @@
                     </div>
 
                     <div class="col">
-                      <div class="form-check custom-radio-icon-form-check pb-2">
+                      <div class="form-check custom-form-check-padding pb-3">
                         <input
                           class="form-check-input custom-radio-icon-input"
                           type="radio"
@@ -353,7 +309,7 @@
                     </div>
 
                     <div class="col">
-                      <div class="form-check custom-radio-icon-form-check pb-2">
+                      <div class="form-check custom-form-check-padding pb-3">
                         <input
                           class="form-check-input custom-radio-icon-input"
                           type="radio"
@@ -380,7 +336,7 @@
                     </div>
 
                     <div class="col">
-                      <div class="form-check custom-radio-icon-form-check pb-2">
+                      <div class="form-check custom-form-check-padding pb-3">
                         <input
                           class="form-check-input custom-radio-icon-input"
                           type="radio"
@@ -407,7 +363,7 @@
                     </div>
 
                     <div class="col">
-                      <div class="form-check custom-radio-icon-form-check pb-2">
+                      <div class="form-check custom-form-check-padding pb-3">
                         <input
                           class="form-check-input custom-radio-icon-input"
                           type="radio"
@@ -434,7 +390,7 @@
                     </div>
 
                     <div class="col">
-                      <div class="form-check custom-radio-icon-form-check pb-2">
+                      <div class="form-check custom-form-check-padding pb-3">
                         <input
                           class="form-check-input custom-radio-icon-input"
                           type="radio"
@@ -493,6 +449,69 @@
         </p>
       </footer>
     </div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const dates = [
+          new Date("2023-10-10T19:00:00.000+02:00"),
+          new Date("2023-10-18T18:30:00.000+02:00"),
+          new Date("2023-10-25T19:30:00.000+02:00"),
+        ];
+
+        const radioListRowEl = document.getElementById("dates-radio-list");
+
+        for (let i = 0; i < dates.length; i++) {
+          const date = dates[i];
+
+          const dateRadioColEl = document.createElement("div");
+
+          dateRadioColEl.classList.add(
+            "col-12",
+            "col-md-4",
+            "d-flex",
+            "justify-content-md-center"
+          );
+
+          const formCheckEl = document.createElement("div");
+
+          formCheckEl.classList.add("form-check");
+
+          const inputEl = document.createElement("input");
+
+          inputEl.classList.add("form-check-input");
+          inputEl.setAttribute("type", "radio");
+          inputEl.setAttribute("name", "datetime[]");
+          inputEl.setAttribute("id", `datetime[${i}]`);
+
+          const locale = "pl-PL";
+
+          const day = new Intl.DateTimeFormat(locale, {
+            day: "2-digit",
+          }).format(date);
+          const month = new Intl.DateTimeFormat(locale, {
+            month: "2-digit",
+          }).format(date);
+          const year = new Intl.DateTimeFormat(locale, {
+            year: "numeric",
+          }).format(date);
+          const time = new Intl.DateTimeFormat(locale, {
+            hour: "2-digit",
+            minute: "2-digit",
+          }).format(date);
+
+          const labelEl = document.createElement("label");
+
+          labelEl.classList.add("form-check-label");
+          labelEl.setAttribute("for", inputEl.getAttribute("id"));
+          labelEl.innerText = `${day}.${month}.${year} ${time}`;
+
+          radioListRowEl.append(dateRadioColEl);
+          dateRadioColEl.append(formCheckEl);
+          formCheckEl.append(inputEl);
+          formCheckEl.append(labelEl);
+        }
+      });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
