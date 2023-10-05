@@ -78,11 +78,11 @@ a .custom-color-green:hover {
 }
 
 .custom-radio-icon-input__icon {
-  width: 100px;
-  height: 100px;
+  width: 7rem;
+  height: 7rem;
   opacity: 0.5;
   display: block;
-  margin: 1rem auto 1.5rem;
+  margin: 1.5rem auto 1rem;
 }
 
 .custom-radio-icon-input:checked + label .custom-radio-icon-input__icon {
