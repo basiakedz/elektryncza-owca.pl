@@ -46,6 +46,13 @@ a .custom-color-green:hover {
   background-color: #2e6569;
 }
 
+.custom-horizontal-line {
+  max-width: 15rem;
+  width: 100%;
+  border-width: 0.3rem;
+  border-color: #2e6569;
+}
+
 .custom-article-cover-container {
   position: relative;
   padding-top: 70%;
