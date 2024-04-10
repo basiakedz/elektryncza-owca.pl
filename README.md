@@ -5,7 +5,7 @@ Website featuring articles on studying and technologies. Crafted the design pers
 ### Links - live preview
 
 - Website: [https://elektryczna-owca-basiakedz.netlify.app/](https://elektryczna-owca-basiakedz.netlify.app/)
-- Form: [https://elektryczna-owca-basiakedz.netlify.app/form](https://elektryczna-owca-basiakedz.netlify.app/form)
+- Form: [https://elektryczna-owca-basiakedz.netlify.app/formularz](https://elektryczna-owca-basiakedz.netlify.app/formularz)
 
 ### Built with
 
